@@ -9,7 +9,7 @@ const Blog =()=>{
             <Header>
  </Header>
      <Image className="pt-[20px] w-full h-auto"
-                             src={"/images/Blog.png"}
+                             src={"/images/blog.png"}
                              alt="shop"
                              width={1440}
                              height={316}
