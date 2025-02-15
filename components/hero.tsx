@@ -90,76 +90,68 @@ const ProductGrid = () => (
        
 
       </div>
-      <div className="text-center"> 
-        <button className=" border border-[#B88E2F] text-[#B88E2F]  mt-4 px-6 py-2 " >
-          <a href="Show More">Show More</a>
-        </button>
-        
-        </div>
-        <div className="flex flex-col lg:flex-row w-auto h-[540px] bg-[#FCF8F3] pt-[100px] mt-[45px] m-10  ">
-         <div className="flex flex-col pl-[100px] w-[422px] lg:w-1/2 gap-4">
-         <h1 className={`${poppins.className}  text-[30px] font-bold  ` }>
-          50+ Beautiful rooms inspiration</h1>
-          <p className="text-[20px] w-[400px]">
-          Our designer already made a lot of beautiful prototipe of rooms that inspire you
-              
+      <div className="flex flex-col lg:flex-row w-auto h-auto bg-[#FCF8F3] pt-[100px] mt-[45px] mx-10">
+        {/* Left Section: Text and Explore More Button */}
+        <div className="flex flex-col pl-6 lg:pl-[100px] w-full lg:w-1/2 gap-4">
+          <h1 className={`${poppins.className} text-[24px] sm:text-[30px] font-bold`}>
+            50+ Beautiful rooms inspiration
+          </h1>
+          <p className="text-[16px] sm:text-[20px] w-full sm:w-[400px]">
+            Our designer already made a lot of beautiful prototypes of rooms that inspire you
           </p>
-          <h2 className=" mt-[20px]">
-          <button className="w-[176px] h-[48px]  bg-[#B88E2F]"> Explore More </button>
+          <h2 className="mt-4 sm:mt-[20px]">
+            <button className="w-[150px] sm:w-[176px] h-[48px] bg-[#B88E2F] text-white">
+              Explore More
+            </button>
           </h2>
+        </div>
 
-         </div>
-          <div className=" lg:w-1/2 lg:pl-8 flex flex-col items-center space-y-4">
-          <div className="flex space-x-4">
-      <div className="relative w-[372px] h-[486px]">
-        <Image
-          className=" object-cover"
-          src={"/images/image.png"}
-          alt="image"
-          width={404}
-          height={585}
-        />
-      </div>
-      <div className="relative ">
-        <Image
-          className=" object-cover"
-          src={"/images/Rectangle 25.png"}
-          alt="image"
-          width={372}
-          height={486}
-        />
-        <Image
-          className="pt-[20px] "
-          src={"/images/Indicator.png"}
-          alt="image"
-          width={120}
-          height={27}
-        />
-      </div>
-     
-     
-    </div>
-      
-      </div>
+        {/* Right Section: Images */}
+        <div className="lg:w-1/2 lg:pl-8 flex flex-col items-center space-y-4">
+          <div className="flex flex-col sm:flex-row space-y-4 sm:space-x-4 sm:space-y-0">
+            {/* Image 1 */}
+            <div className="relative w-full sm:w-[372px] h-[486px]">
+              <Image
+                className="object-cover w-full h-full"
+                src={"/images/image.png"}
+                alt="image"
+                width={404}
+                height={585}
+              />
+            </div>
+
+            {/* Image 2 */}
+            <div className="relative w-full sm:w-[372px] h-[486px]">
+              <Image
+                className="object-cover w-full h-full"
+                src={"/images/Rectangle 25.png"}
+                alt="image"
+                width={372}
+                height={486}
+              />
+              <Image
+                className="absolute top-4 left-4"
+                src={"/images/Indicator.png"}
+                alt="image"
+                width={120}
+                height={27}
+              />
+            </div>
           </div>
+        </div>
+      </div>
 
-          <div>
-          <Image
-          className=""
+      {/* Share Image */}
+      <div className="w-full">
+        <Image
+          className="w-full object-cover"
           src={"/images/Share.png"}
           alt="image"
           width={1799}
           height={780}
         />
-          </div>
-
-
-         
-
-
-    </div>
-    
-              
-  );
+      </div>
+              </div>
+);
   
   export default ProductGrid

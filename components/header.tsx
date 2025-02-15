@@ -7,7 +7,7 @@ function Header(){
     return(
         <div className="width-[1440px] height-[100px] w-full max-w-screen-xl mx-auto ">
             <div className="width-[1286px] height-[41px] Gap-[5px] mt-[29px] pl-[54px] pr-[54px] flex justify-between items-center ">
-            <Image
+            <Image 
         src={"/images/Frame 168.png"}
         alt="next_image"
         width={185}
@@ -25,6 +25,8 @@ function Header(){
         width={22.33}
         height={17.67}
       />
+
+
 
 <Image 
         src={"/images/search.png"}
@@ -51,6 +53,7 @@ function Header(){
 
 
             </nav>
+            
             </div>
              
             
