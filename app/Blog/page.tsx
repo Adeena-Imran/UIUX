@@ -1,6 +1,7 @@
 import Header from "@/components/header"
 import Image from "next/image"
 import Sidebar from "@/components/sidebar"
+import Footer from "@/components/footer"
 
 
 const Blog =()=>{
@@ -38,6 +39,7 @@ const Blog =()=>{
     </div>
   
       </div>
+      <Footer></Footer>
       </div>
     )
 }
